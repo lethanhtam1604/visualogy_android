@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">VISUALOGYX</string>
+    <string name="alert_exit">Would you like to exit this application?</string>
+    <string name="close">Close</string>
+    <string name="no">No</string>
+    <string name="position_the_pipe_on_the_square">Position the pipe on the square</string>
+    <string name="app_version">v1.0.0</string>
+    <string name="about_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="google_maps_key">AIzaSyAlrXHLscKPscvWAJpMS34NY7_BGYkgpmc</string>
+    <string name="or">OR</string>
+    <string name="invalid_email_address">Invalid email address</string>
+    <string name="sign_in">Sign In</string>
+    <string name="new_user">New User?</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="already_a_member_login">Already a member? Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone_number">Phone number</string>
+    <string name="name">Name</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="email_or_phone_number">Email or Phone number</string>
+    <string name="send_a_new_password">Send a new password</string>
+    <string name="request_name">Request name...</string>
+    <string name="refresh">Refresh</string>
+    <string name="no_history_entry">No history entry</string>
+    <string name="no_inspection_entry">No inspection entry</string>
+    <string name="facebook_app_id">642909745869582</string>
+    <string name="test_fairy_id">6b1dcc46265efb6be624802acd1cc9831b794e1d</string>
+</resources>

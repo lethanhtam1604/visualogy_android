@@ -1,0 +1,35 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="SignIn" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorSecond</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorControlNormal">@color/black_light</item>
+    </style>
+
+    <style name="SignUp" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorSecond</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="EditTextStyle" parent="@android:style/Widget.Holo.Light.EditText">
+        <item name="android:textColor">@color/colorSecond</item>
+        <item name="android:textColorHint">@color/black_light</item>
+        <item name="colorControlActivated">@color/black_light</item>
+        <item name="colorControlNormal">@color/black_light</item>
+        <item name="android:textCursorDrawable">@color/colorSecond</item>
+    </style>
+</resources>

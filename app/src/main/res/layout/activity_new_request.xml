@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_new_request" />
+
+        <ScrollView
+            android:id="@+id/mainScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="false"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scrollbarStyle="outsideOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/requestNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/border_request_name"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:hint="@string/request_name"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/main_color"
+                    android:textColorHint="@color/black_light"
+                    android:theme="@style/EditTextStyle" />
+
+                <com.andexert.expandablelayout.library.ExpandableLayout
+                    android:id="@+id/imageExpandableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/item_new_request_corner_background"
+                    app:el_contentLayout="@layout/content_add_image_new_request"
+                    app:el_headerLayout="@layout/header_add_image_new_request" />
+
+                <com.andexert.expandablelayout.library.ExpandableLayout
+                    android:id="@+id/inspectorExpandableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/item_new_request_corner_background"
+                    app:el_contentLayout="@layout/content_inspector_new_request"
+                    app:el_headerLayout="@layout/header_inspector_new_request" />
+
+                <com.andexert.expandablelayout.library.ExpandableLayout
+                    android:id="@+id/windowExpandableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/item_new_request_corner_background"
+                    app:el_contentLayout="@layout/content_window_new_request"
+                    app:el_headerLayout="@layout/header_window_new_request" />
+
+                <com.andexert.expandablelayout.library.ExpandableLayout
+                    android:id="@+id/locationExpandableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/item_new_request_corner_background"
+                    app:el_contentLayout="@layout/content_location_new_request"
+                    app:el_headerLayout="@layout/header_location_new_request" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/gradient_border"
+                    android:onClick="createBtnClicked"
+                    android:text="Create"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_cancel_button"
+                    android:onClick="cancelBtnClicked"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorRed"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

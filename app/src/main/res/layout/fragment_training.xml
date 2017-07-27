@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <TextView
+                    android:id="@+id/tvEditor"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/header_navigation_view"
+                    android:gravity="center"
+                    android:text="Editor"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:id="@+id/etEditor"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/header_navigation_view"
+                    android:text="Editor"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp">
+
+                <com.visualogyx.controls.CustomImageView
+                    android:id="@+id/ivPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/colortemp"/>
+
+                <com.visualogyx.controls.CustomImageView
+                    android:id="@+id/ivPhotoTemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.6"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/canvascolor"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnChoosePhoto"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/add_request"/>
+
+                    <TextView
+                        android:id="@+id/tvAddImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="Add Image"
+                        android:textSize="13dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvTools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="TOOLS"
+                android:textColor="@color/colorGreen"
+                android:textSize="19dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-255dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="342dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/rlCircle"
+                        android:layout_width="match_parent"
+                        android:layout_height="78dp"
+                        android:layout_marginTop="264dp">
+
+                        <com.visualogyx.controls.CustomImageView
+                            android:id="@+id/conCac"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/colortemp"/>
+
+                        <Button
+                            android:id="@+id/btnCircle"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/circle"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="57dp"
+                            android:text="Square"
+                            android:textSize="13dp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlTriangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="78dp"
+                        android:layout_alignLeft="@id/rlCircle"
+                        android:layout_alignTop="@id/rlCircle"
+                        android:layout_marginTop="264dp">
+
+                        <com.visualogyx.controls.CustomImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/colortemp"/>
+
+                        <Button
+                            android:id="@+id/btnTriangle"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/triangle"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="57dp"
+                            android:text="Triangle"
+                            android:textSize="13dp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlSquare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="264dp">
+
+                        <com.visualogyx.controls.CustomImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/colortemp"/>
+
+                        <Button
+                            android:id="@+id/btnSquare"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/square"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="57dp"
+                            android:text="Square"
+                            android:textSize="13dp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlAddShape"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="264dp">
+
+                        <com.visualogyx.controls.CustomImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/colortemp"/>
+
+                        <Button
+                            android:id="@+id/btnAddShape"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/shapes"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="57dp"
+                            android:text="Add Shape"
+                            android:textSize="13dp"/>
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="342dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/rlRed"
+                        android:layout_width="match_parent"
+                        android:layout_height="78dp"
+                        android:layout_marginTop="264dp">
+
+                        <com.visualogyx.controls.CustomImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/colortemp"/>
+
+                        <Button
+                            android:id="@+id/btnRed"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/red"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="57dp"
+                            android:text="Red"
+                            android:textSize="13dp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlGreen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="264dp">
+
+                        <com.visualogyx.controls.CustomImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/colortemp"/>
+
+                        <Button
+                            android:id="@+id/btnGreen"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/green"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="57dp"
+                            android:text="Green"
+                            android:textSize="13dp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="264dp">
+
+                        <com.visualogyx.controls.CustomImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/colortemp"/>
+
+                        <Button
+                            android:id="@+id/btnBlue"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/blue"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="57dp"
+                            android:text="Blue"
+                            android:textSize="13dp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlBrush"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="264dp">
+
+                        <com.visualogyx.controls.CustomImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/colortemp"/>
+
+                        <Button
+                            android:id="@+id/btnBrush"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/brush"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="57dp"
+                            android:text="Brush"
+                            android:textSize="13dp"/>
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="78dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="264dp"
+                    android:layout_weight="1">
+
+                    <com.visualogyx.controls.CustomImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/colortemp"/>
+
+                    <Button
+                        android:id="@+id/btnText"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/text"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="57dp"
+                        android:text="Text"
+                        android:textSize="13dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="78dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="264dp"
+                    android:layout_weight="1">
+
+                    <com.visualogyx.controls.CustomImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/colortemp"/>
+
+                    <Button
+                        android:id="@+id/btnCrop"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/crop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="57dp"
+                        android:text="Crop"
+                        android:textSize="13dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnDone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/gradient_border"
+                android:text="Done"
+                android:textAlignment="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
